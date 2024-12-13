@@ -1,0 +1,85 @@
+:root {
+    --colorMain: black;
+    --colorSecondary: white;
+
+    --colorBgMain: rgb(39, 53, 74);
+    --colorBgSecondary: rgb(234, 80, 71);
+    --colorBgTertiary: grey;
+    --colorBgLabel: rgb(204,255,255);
+
+    --fontMain: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontMain);    
+}
+
+header {
+    color: var(--colorSecondary);
+    background-color: var(--colorBgMain);
+    text-indent: 0.5rem;
+    padding: 0.55rem 0 0.6rem 0.25rem;
+}
+
+.outputDiv {
+    width: calc(100% - 0.8rem);
+    margin: 0.5rem 1.5rem 0 0;
+    border: thin solid var(--colorMain);
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    color: var(--colorSecondary);
+    background: var(--colorBgTertiary);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--colorSecondary);
+    background-color: var(--colorBgMain);
+    margin: 0;
+    padding: 0.25rem;
+}
+
+form {
+    fieldset { 
+        border: thin solid var(--colorMain); 
+        border-radius: 0.5rem;
+        padding: 0.5rem 1.5rem;
+        margin: 0.5rem;
+    }
+    
+    input[type="radio"] {
+        display: none;
+    }
+    label.option {
+        display: inline-block;
+        margin: 0.25rem 0;
+        border: thin solid var(--colorMain);
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+        cursor: pointer;
+    }
+    label.show {
+        color: var(--colorMain);
+        background: var(--colorBgLabel);
+    }
+    label.hide {
+        color: var(--colorBgLabel);
+        background: var(--colorBgMain);
+    }
+    
+    input[type="text"] {
+        width: 100%;
+    }
+    button {
+        margin-top: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
+    }
+}
