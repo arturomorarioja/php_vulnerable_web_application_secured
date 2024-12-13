@@ -1,5 +1,5 @@
 # Not so vulnerable web app
-Security enhancements to the [Vulnerable Web App]().
+Security enhancements to the [Vulnerable Web App](https://github.com/arturomorarioja/php_vulnerable_app).
 
 ## Methods used to prevent security issues
 
