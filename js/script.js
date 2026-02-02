@@ -55,7 +55,7 @@ $(function() {
     });
 
     // Get movie by ID
-    $('#frmMovie').click(function(e) {
+    $('#frmMovie').on('submit', function(e) {
         e.preventDefault();
         if ($('#btnMovie').html() == searchMovieButtonText) {
             $.ajax({
@@ -88,6 +88,7 @@ $(function() {
                 }
             }).
             done(function(data) {
+console.log(data);
                 $('#divMovie').html(JSON.parse(data));
             })
             .fail(function() {
