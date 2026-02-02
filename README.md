@@ -14,6 +14,9 @@ When the PHP API receives the name of the new movie to insert, it trims its and 
 __CSRF__
 The JQuery/JavaScript method applied for XSS also works here.
 
+## Usage
+`docker compose up -d`. The application will be available at `http://localhost:8080`.
+
 ## Tools
 MariaDB / PHP8 / JQuery / JavaScript / CSS3 / HTML5
 

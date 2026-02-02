@@ -9,12 +9,13 @@
  *                SQL statements are now prepared
  *                Data returned from the DB is sanitised to prevent execution of injected JS
  * @version 2.0.1 December 2024 Code convention updated
+ * @version 2.0.2 February 2026 Input validation refactored
  */
 
-$server = 'localhost';
+$server = 'db';
 $dbName = 'movies';
 $user = 'root';
-$pwd = '';
+$pwd = 'pepe';
 
 $dsn = 'mysql:host=' . $server . ';dbname=' . $dbName . ';charset=utf8';
 $options = [
