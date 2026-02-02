@@ -7,7 +7,7 @@
  * @version 1.0.1 December 2024 Code convention updated
  */
 
-$conn = new mysqli('localhost', 'root', '', 'movies'); 
+$conn = new mysqli('db', 'root', 'pepe', 'movies'); 
     
 if ($conn->connect_errno) {
     echo 'Connection unsuccessful';
